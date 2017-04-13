@@ -1,6 +1,14 @@
 # Tank Skirmish
 Tank Skirmish is a two player top-down arcade game complete with: powerups and breakable terrain which is randomized every game.
 
+# Getting Started
+In order to run the program go into the src folder then compile and run the *Driver file*.
+``` shell
+cd src
+javac Driver.java
+java Driver
+```
+
 # Objective
 Survive and kill as many opponents as possible to get the highest number of kills in a row (after being destroyed, you’ll be asked to type your name to record the number of kills on the high score chart).
 
@@ -11,7 +19,6 @@ Survive and kill as many opponents as possible to get the highest number of kill
 * Shields protect from one rocket or 5 bullets// use it to your advantage
 
 # Instructions
-
 | Action | P1 | P2 |
 | ------ | ------ | ------ |
 | Up | w | up arrow |
@@ -23,11 +30,12 @@ Survive and kill as many opponents as possible to get the highest number of kill
 | Respawn | r | 8 |
 | Boost* | l | 3 |
 
+# Items
+![Item description](item_desc.jpg?raw=true "Item description")
+
+
+
 *Press boost button after getting the item to toggle speed up (lasts a certain amount of time). Gather speed icons to replenish countdown.
-## Getting Started
-In order to run the program go into the src folder then compile and run the Driver file.
-``` shell
-cd src
-javac Driver.java
-java Driver
-```
+
+
+# Item
