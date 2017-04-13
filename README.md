@@ -29,6 +29,7 @@ Survive and kill as many opponents as possible to get the highest number of kill
 | Bullet | j | 1 |
 | Respawn | r | 8 |
 | Boost* | l | 3 |
+-------------
 *Press boost button after getting the item to toggle speed up (lasts a certain amount of time). Gather speed icons to replenish countdown.
 
 # Items
