@@ -31,7 +31,7 @@ Survive and kill as many opponents as possible to get the highest number of kill
 | Boost* | l | 3 |
 
 # Items
-![Item description](item_desc.jpg?raw=true "Item description")
+![Item description](item_desc.png?raw=true "Item description")
 
 
 
