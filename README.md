@@ -33,4 +33,4 @@ Survive and kill as many opponents as possible to get the highest number of kill
 *Press boost button after getting the item to toggle speed up (lasts a certain amount of time). Gather speed icons to replenish countdown.
 
 # Items
-![Item description](item_desc.png?raw=true =100x20 "Item description")
+![Item description](./item_desc.png =100x20 "Item description")
