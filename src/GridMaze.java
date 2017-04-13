@@ -72,9 +72,9 @@ public class GridMaze
 
 		//x,y,times they can get hit by rockets, max distance rocket travels
 		p1 = new Player(dice.nextInt(n)*size,dice.nextInt(m)*size,maxHitTimesForPlayer,
-														maxDistanceForPlayerRockets, "data/tank1UP.png");
+														maxDistanceForPlayerRockets, "../data/tank1UP.png");
 		p2 = new Player(dice.nextInt(n)*size,dice.nextInt(m)*size,maxHitTimesForPlayer,	
-														maxDistanceForPlayerRockets, "data/tank2UP.png");
+														maxDistanceForPlayerRockets, "../data/tank2UP.png");
 		
 		respawn(1);
 		respawn(2);
@@ -108,7 +108,7 @@ public class GridMaze
 				do
 				{
 					p1 = new Player(dice.nextInt(n)*size,dice.nextInt(m)*size,maxHitTimesForPlayer, 
-														maxDistanceForPlayerRockets, "data/tank1UP.png");
+														maxDistanceForPlayerRockets, "../data/tank1UP.png");
 				}
 				while(playerHitsGridSquare(p1) || playerHitsPlayer(p1,p2));
 				break;
@@ -119,7 +119,7 @@ public class GridMaze
 				do
 				{
 					p2 = new Player(dice.nextInt(n)*size,dice.nextInt(m)*size,maxHitTimesForPlayer, 
-														maxDistanceForPlayerRockets, "data/tank2UP.png");
+														maxDistanceForPlayerRockets, "../data/tank2UP.png");
 				}
 				while(playerHitsGridSquare(p2) || playerHitsPlayer(p1,p2));
 				break;

@@ -25,7 +25,7 @@ public class Rocket extends MovingObject
 		ready = true;
 		distanceTraveled = 0;
 		
-		explosionPic = new ImageIcon("data/rocket_explosion.gif");
+		explosionPic = new ImageIcon("../data/rocket_explosion.gif");
 		
 		accel = 1;
 		speed = 7;
@@ -62,7 +62,7 @@ public class Rocket extends MovingObject
 		
 		if(direction.contains("UP"))
 		{
-			picture =  new ImageIcon("data/rocket1UP.png");
+			picture =  new ImageIcon("../data/rocket1UP.png");
 			dy = -1 * speed;
 			ddy = -1 * accel;
 		}
@@ -70,7 +70,7 @@ public class Rocket extends MovingObject
 		//right
 		if(direction.contains("RIGHT"))
 		{
-			picture =  new ImageIcon("data/rocket1RIGHT.png");
+			picture =  new ImageIcon("../data/rocket1RIGHT.png");
 			dx = speed;
 			ddx = accel;
 		}
@@ -78,7 +78,7 @@ public class Rocket extends MovingObject
 		//bottom
 		if(direction.contains("DOWN"))
 		{
-			picture =  new ImageIcon("data/rocket1DOWN.png");
+			picture =  new ImageIcon("../data/rocket1DOWN.png");
 			dy = speed;
 			ddy = accel;
 		}
@@ -86,7 +86,7 @@ public class Rocket extends MovingObject
 		//left
 		if(direction.contains("LEFT"))
 		{
-			picture =  new ImageIcon("data/rocket1LEFT.png");
+			picture =  new ImageIcon("../data/rocket1LEFT.png");
 			dx = -1 * speed;
 			ddx = -1 * accel;
 		}
@@ -99,11 +99,11 @@ public class Rocket extends MovingObject
 		System.out.println("explode");
 		shouldExplode = true;
 		
-		explosionPic = new ImageIcon("data/rocket_explosion.gif");
+		explosionPic = new ImageIcon("../data/rocket_explosion.gif");
 		explosionPic.getImage().flush();
 		
 		//explode the rocket
-		picture =  new ImageIcon("data/blank.png");
+		picture =  new ImageIcon("../data/blank.png");
 		
 		//refill player's rocket count
 		ready = true;

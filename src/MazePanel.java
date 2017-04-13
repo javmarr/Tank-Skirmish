@@ -149,21 +149,21 @@ public class MazePanel extends JPanel implements KeyListener
 			}
 			if(c == 'w') //up
 			{
-				gridMaze.p1.picture = new ImageIcon("data/tank1UP.png");
+				gridMaze.p1.picture = new ImageIcon("../data/tank1UP.png");
 				gridMaze.p1.direction = "UP";
 				gridMaze.p1.dy = -1 * p1_SPEED;
 				gridMaze.p1.dx = 0;
 			}
 			if(c == 'a') //left
 			{
-				gridMaze.p1.picture = new ImageIcon("data/tank1LEFT.png");
+				gridMaze.p1.picture = new ImageIcon("../data/tank1LEFT.png");
 				gridMaze.p1.direction = "LEFT";
 				gridMaze.p1.dx = -1 * p1_SPEED;
 				gridMaze.p1.dy = 0;
 			}
 			if(c == 'd') //right
 			{
-				gridMaze.p1.picture = new ImageIcon("data/tank1RIGHT.png");
+				gridMaze.p1.picture = new ImageIcon("../data/tank1RIGHT.png");
 				gridMaze.p1.direction = "RIGHT";
 				gridMaze.p1.dx = p1_SPEED;
 				gridMaze.p1.dy = 0;
@@ -171,7 +171,7 @@ public class MazePanel extends JPanel implements KeyListener
 			}
 			if(c == 's') //down
 			{
-				gridMaze.p1.picture = new ImageIcon("data/tank1DOWN.png");
+				gridMaze.p1.picture = new ImageIcon("../data/tank1DOWN.png");
 				gridMaze.p1.direction = "DOWN";
 				gridMaze.p1.dy = p1_SPEED;
 				gridMaze.p1.dx = 0;
@@ -227,21 +227,21 @@ public class MazePanel extends JPanel implements KeyListener
 			
 			if(i == e.VK_UP) //up
 			{
-				gridMaze.p2.picture = new ImageIcon("data/tank2UP.png");
+				gridMaze.p2.picture = new ImageIcon("../data/tank2UP.png");
 				gridMaze.p2.direction = "UP";
 				gridMaze.p2.dy = -1 * p2_SPEED;
 				gridMaze.p2.dx = 0;
 			}
 			if(i == e.VK_LEFT) //left
 			{
-				gridMaze.p2.picture = new ImageIcon("data/tank2LEFT.png");
+				gridMaze.p2.picture = new ImageIcon("../data/tank2LEFT.png");
 				gridMaze.p2.direction = "LEFT";
 				gridMaze.p2.dx = -1 * p2_SPEED;
 				gridMaze.p2.dy = 0;
 			}
 			if(i == e.VK_RIGHT) //right
 			{
-				gridMaze.p2.picture = new ImageIcon("data/tank2RIGHT.png");
+				gridMaze.p2.picture = new ImageIcon("../data/tank2RIGHT.png");
 				gridMaze.p2.direction = "RIGHT";
 				gridMaze.p2.dx = p2_SPEED;
 				gridMaze.p2.dy = 0;
@@ -249,7 +249,7 @@ public class MazePanel extends JPanel implements KeyListener
 			}
 			if(i == e.VK_DOWN) //down
 			{
-				gridMaze.p2.picture = new ImageIcon("data/tank2DOWN.png");
+				gridMaze.p2.picture = new ImageIcon("../data/tank2DOWN.png");
 				gridMaze.p2.direction = "DOWN";
 				gridMaze.p2.dy = p2_SPEED;
 				gridMaze.p2.dx = 0;

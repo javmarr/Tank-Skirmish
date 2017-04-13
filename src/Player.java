@@ -70,7 +70,7 @@ public class Player extends MovingObject
 
 		for(int i = 0 ; i<maxHearts; i++)
 		{
-			hearts[i] = new StatIcon("data/heart.png");
+			hearts[i] = new StatIcon("../data/heart.png");
 		}
 		//======================
 	
@@ -83,7 +83,7 @@ public class Player extends MovingObject
 		
 		for(int i = 0 ; i<rocketLimit; i++)
 		{
-			rocketRay[i] = new Rocket("data/rocket1DOWN.png");
+			rocketRay[i] = new Rocket("../data/rocket1DOWN.png");
 		}
 		//======================
 		
@@ -92,13 +92,13 @@ public class Player extends MovingObject
 		rockets = new StatIcon[rocketLimit];
 		for(int i = 0 ; i<rocketLimit; i++)
 		{
-			rockets[i] = new StatIcon("data/rocketIcon1.png");
+			rockets[i] = new StatIcon("../data/rocketIcon1.png");
 		}
 		
 		//======================
 		
 		//shield stuff----
-		shield = new ImageIcon("data/shield.png");
+		shield = new ImageIcon("../data/shield.png");
 		
 		//======================
 		
@@ -111,7 +111,7 @@ public class Player extends MovingObject
 		
 		for(int i = 0 ; i<bulletLimit; i++)
 		{
-			bulletRay[i] = new Bullet("data/rocket1DOWN.png");
+			bulletRay[i] = new Bullet("../data/rocket1DOWN.png");
 		}
 		//======================
 		
@@ -567,9 +567,9 @@ public class Player extends MovingObject
 	public void blowUp()
 	{
 		blewUp = true;
-		explosionPic = new ImageIcon("data/tank_explosion.gif");
+		explosionPic = new ImageIcon("../data/tank_explosion.gif");
 		explosionPic.getImage().flush();
-		picture = new ImageIcon("data/tank_dead.png");	
+		picture = new ImageIcon("../data/tank_dead.png");	
 	}
 
 }

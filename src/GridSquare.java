@@ -49,23 +49,23 @@ public class GridSquare extends Rectangle
 			if(hasItem) //has item
 				itemPic = getItem();
 			if(slowDown) //has rocky terrain
-				picture = new ImageIcon("data/rockyGround.png");
+				picture = new ImageIcon("../data/rockyGround.png");
 			else //normal ground
-				picture = new ImageIcon("data/safeGround.png");
+				picture = new ImageIcon("../data/safeGround.png");
 		}
 		else
 		{
 			if(hp ==  maxHp) //full
 			{
-				picture = new ImageIcon("data/wall.png");
+				picture = new ImageIcon("../data/wall.png");
 			}
 			else if(hp >= maxHp/2) //cracked
 			{
-				picture = new ImageIcon("data/wall_semibroken.png");
+				picture = new ImageIcon("../data/wall_semibroken.png");
 			}
 			else // near dead
 			{
-				picture = new ImageIcon("data/wall_broken.png");
+				picture = new ImageIcon("../data/wall_broken.png");
 			}
 		}
 		
@@ -86,20 +86,20 @@ public class GridSquare extends Rectangle
 			//speed - speed boost for x distance
 			
 			case 0: //ammo
-				return new ImageIcon("data/item_ammo.png");
+				return new ImageIcon("../data/item_ammo.png");
 				
 			case 1: //shield
-				return new ImageIcon("data/item_shield.png");
+				return new ImageIcon("../data/item_shield.png");
 				
 			case 2: //health
-				return new ImageIcon("data/item_hp.png");
+				return new ImageIcon("../data/item_hp.png");
 				
 			case 3: //speed
-				return new ImageIcon("data/item_speed.png");
+				return new ImageIcon("../data/item_speed.png");
 		
 			default:
 				System.out.println("===ITEM ERROR===");
-				return new ImageIcon("data/blank.png");
+				return new ImageIcon("../data/blank.png");
 		}
 	}
 }
