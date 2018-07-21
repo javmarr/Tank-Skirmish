@@ -61,9 +61,8 @@ public class GridMaze {
         size = s;
 
         //x,y,times they can get hit by rockets, max distance rocket travels
-        p1 = new Player(dice.nextInt(n) * size, dice.nextInt(m) * size, maxHitTimesForPlayer, maxDistanceForPlayerRockets, new ImageIcon(getClass().getResource("/data/tank1UP.png")));
-        p2 = new Player(dice.nextInt(n) * size, dice.nextInt(m) * size, maxHitTimesForPlayer, maxDistanceForPlayerRockets, new ImageIcon(getClass().getResource("/data/tank2UP.png")));
-
+        p1 = new Player(dice.nextInt(n) * size, dice.nextInt(m) * size, maxHitTimesForPlayer, maxDistanceForPlayerRockets, new ImageIcon(getClass().getClassLoader().getResource("tank1UP.png")));
+        p2 = new Player(dice.nextInt(n) * size, dice.nextInt(m) * size, maxHitTimesForPlayer, maxDistanceForPlayerRockets, new ImageIcon(getClass().getClassLoader().getResource("tank2UP.png")));
         respawn(1);
         respawn(2);
 
@@ -89,7 +88,7 @@ public class GridMaze {
             case 1: {
                 do {
                     p1 = new Player(dice.nextInt(n) * size, dice.nextInt(m) * size, maxHitTimesForPlayer,
-                            maxDistanceForPlayerRockets, new ImageIcon(getClass().getResource("/data/tank1UP.png")));
+                            maxDistanceForPlayerRockets, new ImageIcon(getClass().getClassLoader().getResource("tank1UP.png")));
                 } while (playerHitsGridSquare(p1) || playerHitsPlayer(p1, p2));
                 break;
             }
@@ -97,7 +96,7 @@ public class GridMaze {
             case 2: {
                 do {
                     p2 = new Player(dice.nextInt(n) * size, dice.nextInt(m) * size, maxHitTimesForPlayer,
-                            maxDistanceForPlayerRockets, new ImageIcon(getClass().getResource("/data/tank2UP.png")));
+                            maxDistanceForPlayerRockets, new ImageIcon(getClass().getClassLoader().getResource("tank2UP.png")));
                 } while (playerHitsGridSquare(p2) || playerHitsPlayer(p1, p2));
                 break;
             }

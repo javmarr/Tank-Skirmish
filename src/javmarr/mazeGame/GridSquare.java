@@ -49,21 +49,22 @@ public class GridSquare extends Rectangle {
             }
             if (slowDown) //has rocky terrainn
             {
-                picture = new ImageIcon(getClass().getResource("/data/rockyGround.png"));
+                
+                picture = new ImageIcon(getClass().getClassLoader().getResource("rockyGround.png"));
             } else //normal ground
             {
-                picture = new ImageIcon(getClass().getResource("/data/safeGround.png"));
+                picture = new ImageIcon(getClass().getClassLoader().getResource("safeGround.png"));
             }
         } else {
             if (hp == maxHp) //full
             {
-                picture = new ImageIcon(getClass().getResource("/data/wall.png"));
+                picture = new ImageIcon(getClass().getClassLoader().getResource("wall.png"));
             } else if (hp >= maxHp / 2) //cracked
             {
-                picture = new ImageIcon(getClass().getResource("/data/wall_semibroken.png"));
+                picture = new ImageIcon(getClass().getClassLoader().getResource("wallSemiBroken.png"));
             } else // near dead
             {
-                picture = new ImageIcon(getClass().getResource("/data/wall_broken.png"));
+                picture = new ImageIcon(getClass().getClassLoader().getResource("wallBroken.png"));
             }
         }
 
@@ -82,20 +83,20 @@ public class GridSquare extends Rectangle {
             //speed - speed boost for x distance
 
             case 0: //ammo
-                return new ImageIcon(getClass().getResource("/data/item_ammo.png"));
+                return new ImageIcon(getClass().getClassLoader().getResource("item_ammo.png"));
 
             case 1: //shield
-                return new ImageIcon(getClass().getResource("/data/item_shield.png"));
+                return new ImageIcon(getClass().getClassLoader().getResource("item_shield.png"));
 
             case 2: //health
-                return new ImageIcon(getClass().getResource("/data/item_hp.png"));
+                return new ImageIcon(getClass().getClassLoader().getResource("item_hp.png"));
 
             case 3: //speed
-                return new ImageIcon(getClass().getResource("/data/item_speed.png"));
+                return new ImageIcon(getClass().getClassLoader().getResource("item_speed.png"));
 
             default:
                 System.out.println("===ITEM ERROR===");
-                return new ImageIcon(getClass().getResource("/data/blank.png"));
+                return new ImageIcon(getClass().getClassLoader().getResource("blank.png"));
         }
     }
 }

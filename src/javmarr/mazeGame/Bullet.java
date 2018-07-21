@@ -41,28 +41,28 @@ public class Bullet extends MovingObject {
         ddy = 0;
 
         if (direction.contains("UP")) {
-            picture = new ImageIcon(getClass().getResource("/data/bullet.png"));
+            picture = new ImageIcon(getClass().getClassLoader().getResource("bullet.png"));
             dy = -1 * speed;
             ddy = -1 * accel;
         }
 
         //right
         if (direction.contains("RIGHT")) {
-            picture = new ImageIcon(getClass().getResource("/data/bullet.png"));
+            picture = new ImageIcon(getClass().getClassLoader().getResource("bullet.png"));
             dx = speed;
             ddx = accel;
         }
 
         //bottom
         if (direction.contains("DOWN")) {
-            picture = new ImageIcon(getClass().getResource("/data/bullet.png"));
+            picture = new ImageIcon(getClass().getClassLoader().getResource("bullet.png"));
             dy = speed;
             ddy = accel;
         }
 
         //left
         if (direction.contains("LEFT")) {
-            picture = new ImageIcon(getClass().getResource("/data/bullet.png"));
+            picture = new ImageIcon(getClass().getClassLoader().getResource("bullet.png"));
             dx = -1 * speed;
             ddx = -1 * accel;
         }
@@ -74,7 +74,7 @@ public class Bullet extends MovingObject {
         System.out.println("explode");
         exploded = true;
         //explode the rocket
-        picture = new ImageIcon(getClass().getResource("/data/blank.png"));
+        picture = new ImageIcon(getClass().getClassLoader().getResource("blank.png"));
 
         //refill player's rocket count
         ready = true;

@@ -69,7 +69,7 @@ public class Player extends MovingObject {
         hearts = new StatIcon[maxHearts];
 
         for (int i = 0; i < maxHearts; i++) {
-            hearts[i] = new StatIcon(new ImageIcon(getClass().getResource("/data/heart.png")));
+            hearts[i] = new StatIcon(new ImageIcon(getClass().getClassLoader().getResource("heart.png")));
         }
         //======================
 
@@ -81,19 +81,19 @@ public class Player extends MovingObject {
         rocketRay = new Rocket[rocketLimit]; //have 3 rockets, 0-2
 
         for (int i = 0; i < rocketLimit; i++) {
-            rocketRay[i] = new Rocket(new ImageIcon(getClass().getResource("/data/rocket1DOWN.png")));
+            rocketRay[i] = new Rocket(new ImageIcon(getClass().getClassLoader().getResource("rocket1DOWN.png")));
         }
         //======================
 
         //ammo stuff---
         rockets = new StatIcon[rocketLimit];
         for (int i = 0; i < rocketLimit; i++) {
-            rockets[i] = new StatIcon(new ImageIcon(getClass().getResource("/data/rocketIcon1.png")));
+            rockets[i] = new StatIcon(new ImageIcon(getClass().getClassLoader().getResource("rocketIcon1.png")));
         }
 
         //======================
         //shield stuff----
-        shield = new ImageIcon(getClass().getResource("/data/shield.png"));
+        shield = new ImageIcon(getClass().getClassLoader().getResource("shield.png"));
 
         //======================
         //Bullet STUFF-------
@@ -102,7 +102,7 @@ public class Player extends MovingObject {
         bulletRay = new Bullet[bulletLimit]; //have 3 rockets, 0-2
 
         for (int i = 0; i < bulletLimit; i++) {
-            bulletRay[i] = new Bullet(new ImageIcon(getClass().getResource("/data/rocket1DOWN.png")));
+            bulletRay[i] = new Bullet(new ImageIcon(getClass().getClassLoader().getResource("rocket1DOWN.png")));
         }
         //======================
 
@@ -493,9 +493,9 @@ public class Player extends MovingObject {
 
     public void blowUp() {
         blewUp = true;
-        explosionPic = new ImageIcon(getClass().getResource("/data/tank_explosion.gif"));
+        explosionPic = new ImageIcon(getClass().getClassLoader().getResource("tank_explosion.gif"));
         explosionPic.getImage().flush();
-        picture = new ImageIcon(getClass().getResource("/data/tank_dead.png"));
+        picture = new ImageIcon(getClass().getClassLoader().getResource("tank_dead.png"));
     }
 
 }
