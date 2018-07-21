@@ -61,10 +61,10 @@ public class GridSquare extends Rectangle {
                 picture = new ImageIcon(getClass().getClassLoader().getResource("wall.png"));
             } else if (hp >= maxHp / 2) //cracked
             {
-                picture = new ImageIcon(getClass().getClassLoader().getResource("wallSemiBroken.png"));
+                picture = new ImageIcon(getClass().getClassLoader().getResource("wall_semibroken.png"));
             } else // near dead
             {
-                picture = new ImageIcon(getClass().getClassLoader().getResource("wallBroken.png"));
+                picture = new ImageIcon(getClass().getClassLoader().getResource("wall_broken.png"));
             }
         }
 

@@ -1,18 +1,21 @@
 # Tank Skirmish
 Tank Skirmish is a two player top-down arcade game complete with: powerups and breakable terrain which is randomized every game.
 
-# Screenshots
-![Start screen](./pic01.png "Start Screen")
+# Starting the game
+Double click on the jar file and enjoy.
 
-![Gameplay](./pic02.png "Gameplay")
+# Screenshots
+![Start screen](./other/pic01.png "Start Screen")
+
+![Gameplay](./other/pic02.png "Gameplay")
 
 # Items
-![Item description](./item_desc.png "Item description")
+![Item description](./other/item_desc.png "Item description")
 
-# Getting Started
+# Compiling the source
 In order to run the program go into the src folder then compile and run the *Driver file*.
 ``` shell
-cd src
+cd src/javmarr/mazeGame/
 javac Driver.java
 java Driver
 ```

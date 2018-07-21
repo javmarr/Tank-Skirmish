@@ -1,4 +1,14 @@
 .DS_Store
+
 .idea
+
 *.iml
+
 *.class
+
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
