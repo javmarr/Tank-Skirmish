@@ -30,7 +30,7 @@ public class GridMaze {
     int n, m, size;
 
     GridMaze(int theN, int theM, int s) {
-        dice = new Random(500);
+        dice = new Random();
 
         grid = new GridSquare[theN][theM];
 
