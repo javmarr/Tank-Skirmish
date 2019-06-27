@@ -12,12 +12,23 @@ Double click on the jar file and enjoy.
 # Items
 ![Item description](./other/item_desc.png "Item description")
 
-# Compiling the source
-In order to run the program go into the src folder then compile and run the *Driver file*.
+# Open using NetBeans
+Simply open the project in NetBeans and you are good to go.
+
+# Compiling the source using Command Line
+NOTE: All commands are run using the root folder (ie the one with the .git folder)
+
+1. Create a folder called "classes"
+
+2. Build the java files using:
 ``` shell
-cd src/javmarr/mazeGame/
-javac Driver.java
-java Driver
+javac -d classes -cp classes .\src\javmarr\mazeGame\*.java
+```
+3. Copy the contents from the "res" folder to the "classes" folder
+
+4. Run using
+``` shell
+java -cp classes javmarr.mazeGame.Driver
 ```
 
 # Objective
